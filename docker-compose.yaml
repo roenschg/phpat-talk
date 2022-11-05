@@ -1,0 +1,11 @@
+services:
+  composer:
+    image: composer
+    volumes:
+      - ./:/app
+
+  php:
+    image: php:8.1-cli
+    working_dir: /app
+    volumes:
+      - ./:/app

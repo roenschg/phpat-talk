@@ -1,0 +1,14 @@
+{
+  "name": "roenschg/phpat-talk",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src",
+      "ArchitectureTests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.9",
+    "phpat/phpat": "^0.10.0"
+  }
+}
