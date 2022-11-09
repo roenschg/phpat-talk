@@ -1,0 +1,51 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^App\\\\Foo should not depend on App\\\\Bar$#"
+			count: 4
+			path: src/Foo.php
+
+		-
+			message: "#^Constructor of class App\\\\Foo has an unused parameter \\$bar\\.$#"
+			count: 1
+			path: src/Foo.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\Basic_Config not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\Basic_Model not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\CommandInterface not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\Sql_Model not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\Very_old_model1 not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\Very_old_model2 not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Class ArchitectureTests\\\\Very_old_model3 not found\\.$#"
+			count: 1
+			path: tests/SomeTest.php
+
+		-
+			message: "#^Static method PHPat\\\\Selector\\\\SelectorPrimitive\\:\\:interface\\(\\) invoked with 1 parameter, 0 required\\.$#"
+			count: 1
+			path: tests/SomeTest.php

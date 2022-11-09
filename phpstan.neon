@@ -6,6 +6,7 @@ parameters:
 
 includes:
     - vendor/phpat/phpat/extension.neon
+    - phpstan-baseline.neon
 
 services:
     -
